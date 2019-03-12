@@ -1,0 +1,26 @@
+<head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="margin-left:80px;">
+<h1>WordCount</h1>
+
+<a href="{%url 'about'%}">ABOUT</a>
+<!-- a태그로 about 페이지로 넘어가는 버튼 생성 -->
+
+<form action="{%url 'result'%}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
+<!-- form태그로 입력창만들어줌, action은 어디로 제출할 것인지 -->
+</body>
